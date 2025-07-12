@@ -2,6 +2,25 @@
 
 Sistema completo de processamento de vídeos com arquitetura distribuída, autenticação, filas de processamento e interface web moderna, implementado na AWS com alta disponibilidade e escalabilidade.
 
+## 📁 Repositórios do Projeto
+
+Este projeto é composto por múltiplos repositórios, cada um responsável por uma parte específica da infraestrutura:
+
+### **Aplicações**
+- **[Frontend (React)](https://github.com/VictorlBueno/fiap-hackaton-app)** - Interface web moderna para upload e gerenciamento de vídeos
+- **[Backend (NestJS)](https://github.com/VictorlBueno/fiap-hackaton-service)** - API REST para processamento de vídeos e gerenciamento de jobs
+- **[Auth Service](https://github.com/VictorlBueno/fiap-hackaton-auth)** - Serviço de autenticação com AWS Cognito
+
+### **Infraestrutura Base**
+- **[VPC](https://github.com/VictorlBueno/fiap-hackaton-vpc)** - Rede virtual privada com subnets públicas e privadas
+- **[EKS Cluster](https://github.com/VictorlBueno/fiap-hackaton-eks)** - Cluster Kubernetes gerenciado para orquestração de containers
+- **[Database (RDS)](https://github.com/VictorlBueno/fiap-hackaton-database)** - Banco PostgreSQL gerenciado com alta disponibilidade
+
+### **Serviços de Suporte**
+- **[Redis](https://github.com/VictorlBueno/fiap-hackaton-redis)** - Cache em memória e gerenciamento de sessões
+- **[RabbitMQ](https://github.com/VictorlBueno/fiap-hackaton-rabbitmq)** - Sistema de mensageria para filas de processamento
+- **[Monitoring](https://github.com/VictorlBueno/fiap-hackaton-monitoring)** - Stack de monitoramento com Prometheus e Grafana
+
 ## 🏗️ Arquitetura da Infraestrutura
 
 ```mermaid
